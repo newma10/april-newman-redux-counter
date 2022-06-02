@@ -69,9 +69,11 @@ export function Calculator() {
 
     return <>
         <Card className={"text-center p-3 cardStyle m-5 borderStyle"}>
-            <h1 className={"text-center cardHeader m-3"}>Free Calculator</h1>
-            <input className={"inputField m-2"} onChange={firstUserInput} value={firstInput} type={"number"} placeholder={"First number here"} /><br/>
-            <input className={"inputField m-2"} onChange={secondUserInput} value={secondInput} type={"number"} placeholder={"Second number here"} /><br/>
+            <h1 className={"text-center cardHeader m-3"}>Calculator</h1>
+            <div className={"inputLayout"}>
+                <textarea className={"inputField m-2"} onChange={firstUserInput} value={firstInput} type={"number"} placeholder={"First number here"}></textarea><br/>
+                <textarea className={"inputField m-2"} onChange={secondUserInput} value={secondInput} type={"number"} placeholder={"Second number here"}></textarea><br/>
+            </div>
             <Button className={"m-2 text-center"} variant="success" onClick={calculationAdd}>+</Button>{' '}
             <Button className={"m-2 text-center"} variant="primary" onClick={calculationSubtract}>-</Button>{' '}
             <Button className={"m-2 text-center"} variant="warning" onClick={calculationMultiply}>*</Button>{' '}

@@ -43,8 +43,8 @@ export default function reducer(state = initState, action) {
             return {
                 ...state,
                 calculation: '',
-                firstInput: state.firstInput,
-                secondInput: state.secondInput
+                firstInput: '',
+                secondInput: ''
             }
         default:
             return {

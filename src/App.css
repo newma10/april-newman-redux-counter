@@ -19,7 +19,15 @@ body {
 }
 
 .inputField {
-    color: #202020;
+    color: whitesmoke;
+    text-align: center;
+    padding: 40px 40px;
     background-color: gray;
-    font-size: 18px;
+    font-size: 35px;
+}
+
+.inputLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
